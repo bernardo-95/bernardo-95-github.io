@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <title>Contactanos</title>
+</head>
+
+<body class="gridParent">
+    <header>
+        <a class="nombreGym" href="../index.html">VITAL GYM</a>
+        <nav>
+            <ul class="navBar">
+                <li class="navLinks"><a href="../index.html">INICIO</a></li>
+                <li class="navLinks"><a href="./nosotros.html">QUIÉNES SOMOS</a></li>
+                <li class="navLinks"><a href="./actividades.html">ACTIVIDADES</a></li>
+                <li class="navLinks"><a href="./horarios.html">HORARIOS</a></li>
+                <li class="navLinks"><a class="active" href="./contacto.html">CONTACTANOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cuerpoContacto">
+
+        <div class="introContacto">
+            <h2>¿Tenés dudas y/o consultas adicionales que quieras hacernos?</h2>
+            <h3>Llena el formulario de abajo y te contestaremos a la brevedad</h3>
+        </div>
+
+    <section class="formPage">
+        <div class="formularioContacto">
+            <form>
+                <ul>
+                    <li>
+                        <label for="nombreContacto">Nombre:</label>
+                        <input type="text" id="nombreContacto" placeholder="Nombre y Apellido">
+                    </li>
+
+                    <li>
+                        <label for="emailContacto">E-mail</label>
+                        <input type="email" id="emailContacto" placeholder="Dejanos tu mail">
+                    </li>
+
+                    <li>
+                        <label for="telefonoContacto">Teléfono</label>
+                        <input type="number" id="telefonoContacto" placeholder="Con código de área">
+                    </li>
+
+                    <div>
+                        <li>
+                            <p class="lineaContacto">¿Acerca de qué es tu consulta?</p>
+                            <label for="profesores"> Profesores</label>
+                            <input type="radio" id="profesores" name="consulta" value="Profesores">
+                            <br>
+                            <label for="actividades"> Actividades</label>
+                            <input type="radio" id="actividades" name="consulta" value="Actividades">
+                            <br>
+                            <label for="horarios"> Horarios</label>
+                            <input type="radio" id="horarios" name="consulta" value="Horarios">
+                        </li>
+                    </div>
+
+                    <div>
+                        <li>
+                            <p>¡Dejanos tu comentario!</p>
+                            <textarea placeholder="Cuentanos que deseas saber" name="" id="" cols="50"
+                                rows="15"></textarea>
+                        </li>
+                    </div>
+
+                    <input type="button" value="Enviar">
+                </ul>
+            </form>
+        </div>
+
+        <div class="mapaContacto">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.182783271689!2d-65.42313188530014!3d-24.789193884087542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3b198e6438d%3A0xdbb166646f3f91d3!2sGimnasio%20Vital!5e0!3m2!1ses-419!2sar!4v1640648963952!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <h2 class="cierreContacto">¡Encontranos acá!</h2>
+        </div>
+    </section>
+
+
+    </main>
+
+    <footer>
+        <p>Caseros 1339, Salta Capital</p>
+        <p>387-4455594</p>
+        <p>Lunes a viernes 7:00hs a 22:00hs</p>
+        <p>VitalGymSalta@hotmail.com</p>
+        <p><a class="linkInsta" href="https://www.instagram.com" target="_blank">¡Seguinos en Intagram!</a></p>
+    </footer>
+
+</body>
+
+</html>

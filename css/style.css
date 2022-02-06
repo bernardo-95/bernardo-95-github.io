@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* GRIDS */
+
+.gridParent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    }
+
+/* HEADER */
+
+header {
+  height: auto;
+}
+
+/* GRADIENT */
+
+header{
+  background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 76%, rgba(164,162,162,1) 100%, rgba(102,102,102,0.9895308465182948) 100%);
+}
+
+footer{
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 76%, rgba(102,102,102,0.9895308465182948) 92%, rgba(47,47,47,1) 100%);
+}
+
+/* VITAL GYM */
+
+.nombreGym {
+  position: absolute;
+  text-decoration: none;
+  border-right: solid black 5px;
+  width: 15%;
+  font-family: Staatliches;
+  font-size: 50px;
+  top: 20px;
+  left: 15px;
+  color: black;
+}
+
+/* NAVBAR */
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.navLinks {
+  list-style: none;
+  padding: 20px;
+  margin: 15px;
+}
+
+.navLinks a {
+  color: black;
+  text-decoration: none;
+  font-family: Staatliches;
+  font-size: 20px;
+}
+
+.navLinks a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* TRANSITION NAVBAR */
+.navLinks{
+  padding: 20px;
+  transition: padding 1s, margin 1s;
+}
+
+.navLinks:hover{
+  padding: 10px;
+  margin: 20px;
+}
+
+/* FIN TRANSITION NAVBAR */
+
+.navLinks .active {
+  background-color: black;
+  color: white;
+}
+
+/* NavBar Responsive */
+
+@media (max-width: 800px) {
+  .navBar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .navLinks {
+    padding: 0px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .nombreGym {
+    position: relative;
+    border-right: 0px;
+    text-align: center;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+footer p {
+  color: black;
+  text-decoration: none;
+  font-family: Staatliches;
+  font-size: 20px;
+  padding: 30px;
+}
+
+.linkInsta {
+  text-decoration: none;
+  color: black;
+}
+
+.linkInsta:hover {
+  background-color: black;
+  color: violet;
+}
+
+/* Footer Responsive */
+
+@media (max-width: 800px) {
+  footer {
+    justify-content: space-;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 800px) {
+  footer p {
+    font-size: 10px;
+    padding: 15px;
+  }
+}
+
+/* PAGINA DE INICIO */
+
+.fotoInicio{
+   position: relative;
+   width: 100%;
+   height: 800px;
+   object-fit: cover;
+   opacity: 0.9;
+   z-index: -1;
+}
+
+.textoArriba{
+   position: absolute;
+   font-family: Staatliches;
+   font-size: 70px;
+   color: rgb(233, 227, 227);
+   width: 100%;
+   text-align: center;
+   top: 15%;
+}
+
+.textoAbajo{
+    position: absolute;
+    font-family: Staatliches;
+    font-size: 70px;
+    color: rgb(245, 245, 245);
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.062);
+    top: 105%;
+}
+
+/* Responsive Inicio */
+
+@media (max-width: 800px) {
+    .fotoInicio {
+        height: 600px; 
+    }
+  }
+
+@media (max-width: 800px) {
+    .textoArriba {
+        font-size: 40px;
+        top: 80%; 
+    }
+  }
+
+  @media (max-width: 800px) {
+    .textoAbajo {
+        font-size: 40px;
+        top: 220%; 
+    }
+  }
+
+  /* Pagina NOSOTROS */
+
+.cuerpoProfesores{
+    background-color: rgba(0, 0, 0, 0.932);
+}  
+
+.introProfesores{
+    width: 100%;
+    text-align: center;
+    font-family: Staatliches;
+    font-size: 30px;
+    color: rgb(245, 245, 245);
+}
+
+.cierreProfesores{
+    width: 100%;
+    text-align: center;
+    font-family: Staatliches;
+    font-size: 40px;
+    color: rgb(245, 245, 245);
+}
+
+.fotoProfe{
+    width: 100%;
+}
+
+.profesores{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.profesorUno{
+    flex: 33.3%;
+}
+.profesorDos{
+    flex: 33.3%;
+}
+.profesorTres{
+    flex: 33.3%;
+}
+
+.profesores div{
+    padding: 30px; 
+}
+
+.profesores h4{
+    text-align: center;
+    font-family: Staatliches;
+    font-size: 40px;
+    color: rgb(245, 245, 245);
+}
+
+.profesores p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(245, 245, 245);
+}
+
+/* Responsive Nosotros */
+
+@media (max-width: 800px) {
+    .profesores {
+        flex-direction: column;
+  }
+}
+
+/* Pagina ACTIVIDADES */
+
+.cuerpoActividades{
+    background-color: rgba(0, 0, 0, 0.932);
+}  
+
+.introActividades{
+    width: 100%;
+    text-align: center;
+    font-family: Staatliches;
+    font-size: 30px;
+    color: rgb(245, 245, 245);
+}
+
+.cierreActividades{
+    width: 100%;
+    text-align: center;
+    font-family: Staatliches;
+    font-size: 40px;
+    color: rgb(245, 245, 245);
+}
+
+.fotoActividad{
+    width: 100%;
+}
+
+.tiposActividades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.actividadUno{
+    flex: 33.3%;
+}
+.actividadDos{
+    flex: 33.3%;
+}
+.actividadTres{
+    flex: 33.3%;
+}
+
+.tiposActividades div{
+    padding: 30px; 
+}
+
+.tiposActividades h4{
+    text-align: center;
+    font-family: Staatliches;
+    font-size: 40px;
+    color: rgb(245, 245, 245);
+}
+
+.tiposActividades p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(245, 245, 245);
+}
+
+/* Responsive Actividades */
+    
+@media (max-width: 800px) {
+    .tiposActividades {
+        flex-direction: column;
+  }
+}
+
+/* Pagina HORARIOS */
+
+
+
+.backgroundHorarios{
+    width: 100%;
+    position: relative;
+}
+
+.introHorarios{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: Staatliches;
+    font-size: 30px;
+    color: white;
+    top: 15%;
+}
+
+.cierreHorarios{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: Staatliches;
+    font-size: 40px;
+    color: white;
+    top: 130%; 
+}
+
+table{
+    position: absolute;
+    font-family: staatliches;
+    font-size: 30px;
+    border: orange solid 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 7%;
+}
+
+/* Responsive Horarios */
+
+@media (max-width: 800px) {
+   table{
+       font-size: 15px;
+       top: 110%;
+       right: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+    .introHorarios {
+        font-size: 20px;
+        top: 75%;
+  }
+}
+
+@media (max-width: 800px) {
+    .cierreHorarios {
+        font-size: 20px;
+        top: 175%;
+  }
+}
+
+/* Pagina CONTACTO */
+
+.cuerpoContacto{
+    background-image: url(../assets/img/background-contacto3.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.introContacto{
+    width: 100%;
+    text-align: center;
+    font-family: Staatliches;
+    font-size: 30px;
+    color: rgb(245, 245, 245);
+}
+
+.cierreContacto{
+    width: 100%;
+    /* text-align: center; */
+    font-family: Staatliches;
+    font-size: 40px;
+    color: rgb(245, 245, 245);
+}
+
+
+.formPage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.formularioContacto{
+    flex: 50%;
+    width: 100%;
+    text-align: center;
+    font-family: Staatliches;
+    font-size: 20px;
+    color: rgb(245, 245, 245);
+    padding: 30px;
+    border-right: 5px solid white;
+}
+
+.formularioContacto li{
+    list-style: none;
+}
+
+.mapaContacto{
+    flex: 50%;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Responsive Contacto */
+
+@media (max-width: 800px) {
+    .formPage {
+        flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+    .mapaContacto {
+        padding: 0px;
+        margin-top: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+    .formularioContacto {
+        padding: 0px;
+        border-right: 0px;
+        border-bottom: 5px solid white;
+        padding-bottom: 10px;
+  }
+}
