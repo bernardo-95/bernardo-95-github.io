@@ -12,119 +12,56 @@
     grid-template-rows: 1fr;
     }
 
-/* HEADER */
-
-header {
-  height: auto;
-}
-
-/* GRADIENT */
-
-header{
-  background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 76%, rgba(164,162,162,1) 100%, rgba(102,102,102,0.9895308465182948) 100%);
-}
-
-footer{
-  background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgba(255,255,255,1) 76%, rgba(102,102,102,0.9895308465182948) 92%, rgba(47,47,47,1) 100%);
-}
-
 /* VITAL GYM */
 
 .nombreGym {
-  position: absolute;
   text-decoration: none;
   border-right: solid black 5px;
   width: 15%;
   font-family: Staatliches;
   font-size: 50px;
-  top: 20px;
-  left: 15px;
   color: black;
 }
 
 /* NAVBAR */
 
-.navBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}
-
 .navLinks {
-  list-style: none;
-  padding: 20px;
-  margin: 15px;
-}
-
-.navLinks a {
-  color: black;
   text-decoration: none;
   font-family: Staatliches;
   font-size: 20px;
 }
 
 .navLinks a:hover {
-  background-color: black;
-  color: white;
+  background-color: grey;
 }
 
 /* TRANSITION NAVBAR */
-.navLinks{
-  padding: 20px;
-  transition: padding 1s, margin 1s;
+.navTransit{
+  font-size: 20px;
+  transition: font-size 1s;
 }
 
-.navLinks:hover{
-  padding: 10px;
-  margin: 20px;
+.navTransit:hover{
+  font-size: 23px;
 }
 
 /* FIN TRANSITION NAVBAR */
 
-.navLinks .active {
-  background-color: black;
-  color: white;
-}
 
 /* NavBar Responsive */
 
 @media (max-width: 800px) {
-  .navBar {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (max-width: 800px) {
-  .navLinks {
-    padding: 0px;
-    margin: 5px;
-  }
-}
-
-@media (max-width: 800px) {
   .nombreGym {
-    position: relative;
     border-right: 0px;
     text-align: center;
-    display: block;
-    top: 0px;
-    left: 0px;
     width: 100%;
   }
 }
 
 /* FOOTER */
-
-/* footer {
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-} */
+footer{
+  background-color: #F8F9FA;
+}
 
 footer p {
   color: black;
