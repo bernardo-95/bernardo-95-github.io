@@ -64,7 +64,7 @@ footer{
 }
 
 footer p {
-  color: black;
+  color: rgb(58, 58, 58);
   text-decoration: none;
   font-family: Staatliches;
   font-size: 20px;
@@ -74,7 +74,7 @@ footer p {
 
 .linkInsta {
   text-decoration: none;
-  color: black;
+  color: rgb(58, 58, 58);
   font-family: Staatliches;
   font-size: 20px;
   padding: 20px;  
@@ -109,57 +109,74 @@ footer p {
   }
 }
 
+@media (max-width: 500px) {
+  footer p {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 500px) {
+  .linkInsta {
+    font-size: 8px;
+  }
+}
+
 /* PAGINA DE INICIO */
 
-.fotoInicio{
-   position: relative;
-   width: 100%;
-   height: 800px;
-   object-fit: cover;
-   opacity: 0.9;
-   z-index: -1;
+.cuerpoInicio{
+  background-image: url(../assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  height: 800px;
 }
 
-.textoArriba{
-   position: absolute;
+.textoInicio{
    font-family: Staatliches;
    font-size: 70px;
-   color: rgb(233, 227, 227);
+   color: rgb(255, 255, 255);
    width: 100%;
    text-align: center;
-   top: 15%;
 }
 
-.textoAbajo{
-    position: absolute;
-    font-family: Staatliches;
-    font-size: 70px;
-    color: rgb(245, 245, 245);
-    width: 100%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.062);
-    top: 105%;
+.textoInicioAbajo{
+  font-family: Staatliches;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+
 }
 
 /* Responsive Inicio */
 
 @media (max-width: 800px) {
-    .fotoInicio {
-        height: 600px; 
+    .cuerpoInicio {
+        height: 400px; 
     }
   }
 
 @media (max-width: 800px) {
-    .textoArriba {
+    .textoInicio {
         font-size: 40px;
-        top: 80%; 
     }
   }
 
   @media (max-width: 800px) {
-    .textoAbajo {
-        font-size: 40px;
-        top: 220%; 
+    .textoInicioAbajo {
+        font-size: 30px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .textoInicio {
+        font-size: 30px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .textoInicioAbajo {
+        font-size: 20px;
     }
   }
 
