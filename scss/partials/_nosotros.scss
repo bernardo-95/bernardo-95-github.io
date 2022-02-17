@@ -1,0 +1,67 @@
+  /* Pagina NOSOTROS */
+
+  .cuerpoProfesores{
+    background-color: rgba(0, 0, 0, 0.932);
+}  
+
+.introProfesores{
+    width: 100%;
+    text-align: center;
+    font-family: $fontPrincipal;
+    font-size: 30px;
+    color: rgb(245, 245, 245);
+}
+
+.cierreProfesores{
+    width: 100%;
+    text-align: center;
+    font-family: $fontPrincipal;
+    font-size: 40px;
+    color: rgb(245, 245, 245);
+}
+
+.fotoProfe{
+    width: 100%;
+}
+
+.profesores{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.profesorUno{
+    flex: 33.3%;
+}
+.profesorDos{
+    flex: 33.3%;
+}
+.profesorTres{
+    flex: 33.3%;
+}
+
+.profesores div{
+    padding: 30px; 
+}
+
+.profesores h4{
+    text-align: center;
+    font-family: $fontPrincipal;
+    font-size: 40px;
+    color: rgb(245, 245, 245);
+}
+
+.profesores p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(245, 245, 245);
+}
+
+/* Responsive Nosotros */
+
+@media (max-width: 800px) {
+    .profesores {
+        flex-direction: column;
+  }
+}

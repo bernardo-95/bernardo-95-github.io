@@ -1,0 +1,67 @@
+/* Pagina ACTIVIDADES */
+
+.cuerpoActividades{
+    background-color: rgba(0, 0, 0, 0.932);
+}  
+
+.introActividades{
+    width: 100%;
+    text-align: center;
+    font-family: $fontPrincipal;
+    font-size: 30px;
+    color: rgb(245, 245, 245);
+}
+
+.cierreActividades{
+    width: 100%;
+    text-align: center;
+    font-family: $fontPrincipal;
+    font-size: 40px;
+    color: rgb(245, 245, 245);
+}
+
+.fotoActividad{
+    width: 100%;
+}
+
+.tiposActividades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.actividadUno{
+    flex: 33.3%;
+}
+.actividadDos{
+    flex: 33.3%;
+}
+.actividadTres{
+    flex: 33.3%;
+}
+
+.tiposActividades div{
+    padding: 30px; 
+}
+
+.tiposActividades h4{
+    text-align: center;
+    font-family: $fontPrincipal;
+    font-size: 40px;
+    color: rgb(245, 245, 245);
+}
+
+.tiposActividades p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(245, 245, 245);
+}
+
+/* Responsive Actividades */
+    
+@media (max-width: 800px) {
+    .tiposActividades {
+        flex-direction: column;
+  }
+}

@@ -1,0 +1,46 @@
+/* VITAL GYM */
+
+.nombreGym {
+    text-decoration: none;
+    border-right: solid black 5px;
+    width: 15%;
+    font-family: $fontPrincipal;
+    font-size: 50px;
+    color: black;
+  }
+  
+  /* NAVBAR */
+  
+  .navLinks {
+    text-decoration: none;
+    font-family: $fontPrincipal;
+    font-size: 20px;
+
+    a:hover {
+        background-color: grey;
+      }
+
+  }
+
+  /* TRANSITION NAVBAR */
+  .navTransit{
+    font-size: 20px;
+    transition: font-size 1s;
+
+    &:hover{
+        font-size: 23px;
+      }
+  }
+ 
+  /* FIN TRANSITION NAVBAR */
+  
+  
+  /* NavBar Responsive */
+  
+  @media (max-width: 800px) {
+    .nombreGym {
+      border-right: 0px;
+      text-align: center;
+      width: 100%;
+    }
+  }

@@ -1,0 +1,57 @@
+/* PAGINA DE INICIO */
+
+.cuerpoInicio{
+    background-image: url(../assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    height: 800px;
+
+    .textoInicio{
+        font-family: $fontPrincipal;
+        font-size: 70px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        text-align: center;
+        }
+
+    .textoInicioAbajo{
+        font-family: Staatliches;
+        font-size: 60px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        text-align: center;
+        }
+    }
+
+  /* Responsive Inicio */
+  
+  @media (max-width: 800px) {
+      .cuerpoInicio {
+          height: 400px; 
+      }
+    }
+  
+  @media (max-width: 800px) {
+      .textoInicio {
+          font-size: 40px;
+      }
+    }
+  
+    @media (max-width: 800px) {
+      .textoInicioAbajo {
+          font-size: 30px;
+      }
+    }
+  
+    @media (max-width: 500px) {
+      .textoInicio {
+          font-size: 30px;
+      }
+    }
+  
+    @media (max-width: 500px) {
+      .textoInicioAbajo {
+          font-size: 20px;
+      }
+    }

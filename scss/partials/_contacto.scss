@@ -1,0 +1,76 @@
+/* Pagina CONTACTO */
+
+.cuerpoContacto{
+    background-image: url(../assets/img/background-contacto3.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.introContacto{
+    width: 100%;
+    text-align: center;
+    font-family: $fontPrincipal;
+    font-size: 30px;
+    color: rgb(245, 245, 245);
+}
+
+.cierreContacto{
+    width: 100%;
+    /* text-align: center; */
+    font-family: $fontPrincipal;
+    font-size: 40px;
+    color: rgb(245, 245, 245);
+}
+
+
+.formPage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.formularioContacto{
+    flex: 50%;
+    width: 100%;
+    text-align: center;
+    font-family: $fontPrincipal;
+    font-size: 20px;
+    color: rgb(245, 245, 245);
+    padding: 30px;
+    border-right: 5px solid white;
+}
+
+.formularioContacto li{
+    list-style: none;
+}
+
+.mapaContacto{
+    flex: 50%;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Responsive Contacto */
+
+@media (max-width: 800px) {
+    .formPage {
+        flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+    .mapaContacto {
+        padding: 0px;
+        margin-top: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+    .formularioContacto {
+        padding: 0px;
+        border-right: 0px;
+        border-bottom: 5px solid white;
+        padding-bottom: 10px;
+  }
+}
