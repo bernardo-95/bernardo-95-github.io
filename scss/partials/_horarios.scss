@@ -11,7 +11,7 @@
     text-align: center;
     font-family: $fontPrincipal;
     font-size: 30px;
-    color: white;
+    color: map-get($colores , claro );
     top: 15%;
 }
 
@@ -21,7 +21,7 @@
     text-align: center;
     font-family: $fontPrincipal;
     font-size: 40px;
-    color: white;
+    color: map-get($colores , claro );
     top: 130%; 
 }
 
@@ -31,7 +31,7 @@ table{
     font-size: 30px;
     border: orange solid 10px;
     background-color: black;
-    color: white;
+    color: map-get($colores , claro );
     text-align: center;
     top: 50%;
     left: 7%;

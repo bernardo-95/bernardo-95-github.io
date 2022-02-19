@@ -10,15 +10,15 @@
     .textoInicio{
         font-family: $fontPrincipal;
         font-size: 70px;
-        color: rgb(255, 255, 255);
+        color: map-get($colores , claro );
         width: 100%;
         text-align: center;
         }
 
     .textoInicioAbajo{
-        font-family: Staatliches;
+        font-family: $fontPrincipal;
         font-size: 60px;
-        color: rgb(255, 255, 255);
+        color: map-get($colores , claro );
         width: 100%;
         text-align: center;
         }

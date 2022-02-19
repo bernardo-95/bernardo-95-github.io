@@ -3,7 +3,7 @@
 .cuerpoContacto{
     background-image: url(../assets/img/background-contacto3.jpg);
     background-size: cover;
-    color: white;
+    color: map-get($colores , claro );
 }
 
 .introContacto{
@@ -11,7 +11,7 @@
     text-align: center;
     font-family: $fontPrincipal;
     font-size: 30px;
-    color: rgb(245, 245, 245);
+    color: map-get($colores , claro );
 }
 
 .cierreContacto{
@@ -19,7 +19,7 @@
     /* text-align: center; */
     font-family: $fontPrincipal;
     font-size: 40px;
-    color: rgb(245, 245, 245);
+    color: map-get($colores , claro );
 }
 
 
@@ -35,7 +35,7 @@
     text-align: center;
     font-family: $fontPrincipal;
     font-size: 20px;
-    color: rgb(245, 245, 245);
+    color: map-get($colores , claro );
     padding: 30px;
     border-right: 5px solid white;
 }

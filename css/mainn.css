@@ -8,6 +8,14 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr; }
 
+/* MAP */
+/* EXTEND */
+.tiposActividades {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+/* MIXIN */
 /* VITAL GYM */
 .nombreGym {
   text-decoration: none;
@@ -135,14 +143,14 @@ footer {
   text-align: center;
   font-family: Staatliches;
   font-size: 30px;
-  color: whitesmoke; }
+  color: white; }
 
 .cierreProfesores {
   width: 100%;
   text-align: center;
   font-family: Staatliches;
   font-size: 40px;
-  color: whitesmoke; }
+  color: white; }
 
 .fotoProfe {
   width: 100%; }
@@ -168,13 +176,13 @@ footer {
   text-align: center;
   font-family: Staatliches;
   font-size: 40px;
-  color: whitesmoke; }
+  color: white; }
 
 .profesores p {
   text-align: center;
   font-family: sans-serif;
   font-size: 20px;
-  color: whitesmoke; }
+  color: white; }
 
 /* Responsive Nosotros */
 @media (max-width: 800px) {
@@ -190,22 +198,17 @@ footer {
   text-align: center;
   font-family: Staatliches;
   font-size: 30px;
-  color: whitesmoke; }
+  color: white; }
 
 .cierreActividades {
   width: 100%;
   text-align: center;
   font-family: Staatliches;
   font-size: 40px;
-  color: whitesmoke; }
+  color: white; }
 
 .fotoActividad {
   width: 100%; }
-
-.tiposActividades {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap; }
 
 .actividadUno {
   flex: 33.3%; }
@@ -223,13 +226,13 @@ footer {
   text-align: center;
   font-family: Staatliches;
   font-size: 40px;
-  color: whitesmoke; }
+  color: white; }
 
 .tiposActividades p {
   text-align: center;
   font-family: sans-serif;
   font-size: 20px;
-  color: whitesmoke; }
+  color: white; }
 
 /* Responsive Actividades */
 @media (max-width: 800px) {
@@ -298,14 +301,14 @@ table {
   text-align: center;
   font-family: Staatliches;
   font-size: 30px;
-  color: whitesmoke; }
+  color: white; }
 
 .cierreContacto {
   width: 100%;
   /* text-align: center; */
   font-family: Staatliches;
   font-size: 40px;
-  color: whitesmoke; }
+  color: white; }
 
 .formPage {
   display: flex;
@@ -318,7 +321,7 @@ table {
   text-align: center;
   font-family: Staatliches;
   font-size: 20px;
-  color: whitesmoke;
+  color: white;
   padding: 30px;
   border-right: 5px solid white; }
 
