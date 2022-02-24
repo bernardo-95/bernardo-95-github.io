@@ -5,6 +5,7 @@
 }  
 
 .introProfesores{
+    margin-top: 20px;
     width: 100%;
     text-align: center;
     font-family: $fontPrincipal;
@@ -18,6 +19,7 @@
     font-family: $fontPrincipal;
     font-size: 40px;
     color: map-get($colores , claro );
+    margin-top: 20px;
 }
 
 .fotoProfe{
@@ -42,7 +44,7 @@
     padding: 30px; 
 }
 
-.profesores h4{
+.profesores h3{
     text-align: center;
     font-family: $fontPrincipal;
     font-size: 40px;
@@ -54,6 +56,7 @@
     font-family: sans-serif;
     font-size: 20px;
     color: map-get($colores , claro );
+    margin-top: 30px;
 }
 
 /* Responsive Nosotros */

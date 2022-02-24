@@ -2,8 +2,6 @@
 
 .nombreGym {
     text-decoration: none;
-    border-right: solid black 5px;
-    width: 15%;
     font-family: $fontPrincipal;
     font-size: 50px;
     color: black;
@@ -24,11 +22,11 @@
 
   /* TRANSITION NAVBAR */
   .navTransit{
-    font-size: 20px;
-    transition: font-size 1s;
+    text-decoration: none;
+    transition: text-decoration 2s;
 
     &:hover{
-        font-size: 23px;
+        text-decoration: underline;
       }
   }
  
@@ -39,7 +37,6 @@
   
   @media (max-width: 800px) {
     .nombreGym {
-      border-right: 0px;
       text-align: center;
       width: 100%;
     }

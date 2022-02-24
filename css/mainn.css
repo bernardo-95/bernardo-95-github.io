@@ -19,8 +19,6 @@
 /* VITAL GYM */
 .nombreGym {
   text-decoration: none;
-  border-right: solid black 5px;
-  width: 15%;
   font-family: Staatliches;
   font-size: 50px;
   color: black; }
@@ -35,23 +33,22 @@
 
 /* TRANSITION NAVBAR */
 .navTransit {
-  font-size: 20px;
-  transition: font-size 1s; }
+  text-decoration: none;
+  transition: text-decoration 2s; }
   .navTransit:hover {
-    font-size: 23px; }
+    text-decoration: underline; }
 
 /* FIN TRANSITION NAVBAR */
 /* NavBar Responsive */
 @media (max-width: 800px) {
   .nombreGym {
-    border-right: 0px;
     text-align: center;
     width: 100%; } }
 
 /* FOOTER */
 footer {
   background-color: #F8F9FA; }
-  footer p {
+  footer h3 {
     color: #3a3a3a;
     text-decoration: none;
     font-family: Staatliches;
@@ -71,27 +68,29 @@ footer {
 
 /* Footer Responsive */
 @media (max-width: 800px) {
-  footer {
-    justify-content: space-;
-    flex-wrap: nowrap; } }
+  footer div {
+    flex-direction: column;
+    margin-top: 10px; } }
 
 @media (max-width: 800px) {
-  footer p {
-    font-size: 10px;
-    padding: 15px; } }
+  footer h3 {
+    padding: 5px;
+    font-size: 20px; } }
 
 @media (max-width: 800px) {
-  .linkInsta {
-    font-size: 10px;
-    padding: 15px; } }
+  footer .linkInsta {
+    padding: 5px;
+    font-size: 20px; } }
 
 @media (max-width: 500px) {
-  footer p {
-    font-size: 7px; } }
+  footer h3 {
+    padding: 5px;
+    font-size: 15px; } }
 
 @media (max-width: 500px) {
-  .linkInsta {
-    font-size: 8px; } }
+  footer .linkInsta {
+    padding: 5px;
+    font-size: 15px; } }
 
 /* PAGINA DE INICIO */
 .cuerpoInicio {
@@ -105,40 +104,52 @@ footer {
     font-size: 70px;
     color: white;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    -webkit-text-stroke: 1.5px black; }
   .cuerpoInicio .textoInicioAbajo {
     font-family: Staatliches;
     font-size: 60px;
     color: white;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    -webkit-text-stroke: 1.5px black; }
 
 /* Responsive Inicio */
 @media (max-width: 800px) {
-  .cuerpoInicio {
-    height: 400px; } }
+  .inicio .textoInicio {
+    font-size: 60px;
+    -webkit-text-stroke: 1.5px black; } }
 
 @media (max-width: 800px) {
-  .textoInicio {
-    font-size: 40px; } }
+  .inicio .textoInicioAbajo {
+    font-size: 45px;
+    -webkit-text-stroke: 1.5px black; } }
 
 @media (max-width: 800px) {
-  .textoInicioAbajo {
-    font-size: 30px; } }
+  .inicio .cuerpoInicio {
+    background-position: 55%; } }
 
 @media (max-width: 500px) {
-  .textoInicio {
-    font-size: 30px; } }
+  .inicio .textoInicio {
+    font-size: 50px;
+    -webkit-text-stroke: 1.5px black; } }
 
 @media (max-width: 500px) {
-  .textoInicioAbajo {
-    font-size: 20px; } }
+  .inicio .textoInicioAbajo {
+    font-size: 40px;
+    -webkit-text-stroke: 1.5px black; } }
+
+@media (max-width: 500px) {
+  .inicio .cuerpoInicio {
+    height: 700px;
+    background-position: 55%; } }
 
 /* Pagina NOSOTROS */
 .cuerpoProfesores {
   background-color: rgba(0, 0, 0, 0.932); }
 
 .introProfesores {
+  margin-top: 20px;
   width: 100%;
   text-align: center;
   font-family: Staatliches;
@@ -150,7 +161,8 @@ footer {
   text-align: center;
   font-family: Staatliches;
   font-size: 40px;
-  color: white; }
+  color: white;
+  margin-top: 20px; }
 
 .fotoProfe {
   width: 100%; }
@@ -172,7 +184,7 @@ footer {
 .profesores div {
   padding: 30px; }
 
-.profesores h4 {
+.profesores h3 {
   text-align: center;
   font-family: Staatliches;
   font-size: 40px;
@@ -182,7 +194,8 @@ footer {
   text-align: center;
   font-family: sans-serif;
   font-size: 20px;
-  color: white; }
+  color: white;
+  margin-top: 30px; }
 
 /* Responsive Nosotros */
 @media (max-width: 800px) {
@@ -197,15 +210,17 @@ footer {
   width: 100%;
   text-align: center;
   font-family: Staatliches;
-  font-size: 30px;
-  color: white; }
+  font-size: 40px;
+  color: white;
+  margin-top: 20px; }
 
 .cierreActividades {
   width: 100%;
   text-align: center;
   font-family: Staatliches;
   font-size: 40px;
-  color: white; }
+  color: white;
+  margin-top: 20px; }
 
 .fotoActividad {
   width: 100%; }
@@ -222,7 +237,7 @@ footer {
 .tiposActividades div {
   padding: 30px; }
 
-.tiposActividades h4 {
+.tiposActividades h3 {
   text-align: center;
   font-family: Staatliches;
   font-size: 40px;
@@ -232,7 +247,8 @@ footer {
   text-align: center;
   font-family: sans-serif;
   font-size: 20px;
-  color: white; }
+  color: white;
+  margin-top: 30px; }
 
 /* Responsive Actividades */
 @media (max-width: 800px) {
@@ -240,55 +256,79 @@ footer {
     flex-direction: column; } }
 
 /* Pagina HORARIOS */
-.backgroundHorarios {
-  width: 100%;
-  position: relative; }
+.cuerpoHorarios {
+  background-image: url(/assets/img/background-horarios.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  height: 800px; }
 
 .introHorarios {
-  position: absolute;
   width: 100%;
   text-align: center;
   font-family: Staatliches;
-  font-size: 30px;
   color: white;
-  top: 15%; }
+  margin-top: 20px;
+  -webkit-text-stroke: 1.5px black; }
+
+.introHorarios h1 {
+  font-size: 50px; }
+
+.introHorarios h2 {
+  font-size: 50px; }
 
 .cierreHorarios {
-  position: absolute;
   width: 100%;
   text-align: center;
   font-family: Staatliches;
-  font-size: 40px;
+  font-size: 50px;
   color: white;
-  top: 130%; }
+  -webkit-text-stroke: 1.5px black; }
 
 table {
-  position: absolute;
   font-family: Staatliches;
-  font-size: 30px;
+  font-size: 25px;
   border: orange solid 10px;
   background-color: black;
   color: white;
   text-align: center;
-  top: 50%;
-  left: 7%; }
+  width: 80%;
+  margin: auto; }
 
 /* Responsive Horarios */
 @media (max-width: 800px) {
   table {
-    font-size: 15px;
-    top: 110%;
-    right: 50px; } }
+    font-size: 20px;
+    width: 100%; } }
 
 @media (max-width: 800px) {
-  .introHorarios {
-    font-size: 20px;
-    top: 75%; } }
+  .introHorarios h2 {
+    font-size: 40px; } }
+
+@media (max-width: 800px) {
+  .introHorarios h1 {
+    font-size: 40px; } }
 
 @media (max-width: 800px) {
   .cierreHorarios {
-    font-size: 20px;
-    top: 175%; } }
+    font-size: 40px; } }
+
+@media (max-width: 500px) {
+  .introHorarios h2 {
+    font-size: 30px; } }
+
+@media (max-width: 500px) {
+  .introHorarios h1 {
+    font-size: 30px; } }
+
+@media (max-width: 500px) {
+  .cierreHorarios {
+    font-size: 30px; } }
+
+@media (max-width: 500px) {
+  table {
+    font-size: 15px;
+    width: 100%; } }
 
 /* Pagina CONTACTO */
 .cuerpoContacto {

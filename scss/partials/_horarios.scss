@@ -1,62 +1,97 @@
 /* Pagina HORARIOS */
 
-.backgroundHorarios{
-    width: 100%;
-    position: relative;
+.cuerpoHorarios{
+    background-image: url(/assets/img/background-horarios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    height: 800px;
 }
 
 .introHorarios{
-    position: absolute;
     width: 100%;
     text-align: center;
     font-family: $fontPrincipal;
-    font-size: 30px;
     color: map-get($colores , claro );
-    top: 15%;
+    margin-top: 20px;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.introHorarios h1{
+    font-size: 50px;
+}
+
+.introHorarios h2{
+    font-size: 50px;
 }
 
 .cierreHorarios{
-    position: absolute;
     width: 100%;
     text-align: center;
     font-family: $fontPrincipal;
-    font-size: 40px;
+    font-size: 50px;
     color: map-get($colores , claro );
-    top: 130%; 
+    -webkit-text-stroke: 1.5px black;
 }
 
 table{
-    position: absolute;
     font-family: $fontPrincipal;
-    font-size: 30px;
+    font-size: 25px;
     border: orange solid 10px;
     background-color: black;
     color: map-get($colores , claro );
     text-align: center;
-    top: 50%;
-    left: 7%;
+    width: 80%;
+    margin: auto;
+
 }
 
 /* Responsive Horarios */
 
 @media (max-width: 800px) {
    table{
-       font-size: 15px;
-       top: 110%;
-       right: 50px;
+       font-size: 20px;
+       width: 100%;   
   }
 }
 
 @media (max-width: 800px) {
-    .introHorarios {
-        font-size: 20px;
-        top: 75%;
+    .introHorarios h2 {
+        font-size: 40px;
+  }
+}
+@media (max-width: 800px) {
+    .introHorarios h1 {
+        font-size: 40px;
   }
 }
 
 @media (max-width: 800px) {
     .cierreHorarios {
-        font-size: 20px;
-        top: 175%;
+        font-size: 40px;
   }
 }
+
+@media (max-width: 500px) {
+    .introHorarios h2 {
+        font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+    .introHorarios h1 {
+        font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+    .cierreHorarios {
+        font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+    table{
+        font-size: 15px;
+        width: 100%;   
+   }
+ }
