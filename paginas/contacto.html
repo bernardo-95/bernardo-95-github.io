@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Vital GYM es un gimnasio ubicado en la ciudad de Salta, especializado en distintos tipos de actividades físicas, se encarga de cuidar de tu salud y de tu cuerpo desde hace más de 25 años.">
-    <meta name="keywords" content="contacto, gimnasio, gym, vital, salud, ejercicio, pesas, pilates, zumba, entrenamiento, entrenar, fisico, fitness"> 
+    <meta name="description"
+        content="Vital GYM es un gimnasio ubicado en la ciudad de Salta, especializado en distintos tipos de actividades físicas, se encarga de cuidar de tu salud y de tu cuerpo desde hace más de 25 años.">
+    <meta name="keywords"
+        content="contacto, gimnasio, gym, vital, salud, ejercicio, pesas, pilates, zumba, entrenamiento, entrenar, fisico, fitness">
 
     <link rel="icon" href="../assets/img/icono.png">
 
@@ -28,8 +30,9 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand nombreGym" href="../index.html">VITAL GYM</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse navLinks" id="navbarNavDropdown">
@@ -47,7 +50,8 @@
                             <a class="nav-link navTransit" href="./horarios.html">Horarios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link navTransit active" aria-current="page" href="./contacto.html">Contactanos</a>
+                            <a class="nav-link navTransit active" aria-current="page"
+                                href="./contacto.html">Contactanos</a>
                         </li>
                     </ul>
                 </div>
@@ -59,60 +63,49 @@
 
         <div class="introContacto">
             <h2>¿Tenés dudas y/o consultas adicionales que quieras hacernos?</h2>
-            <h3>Llena el formulario de abajo y te contestaremos a la brevedad</h3>
+            <h2>Llena el formulario de abajo y te contestaremos a la brevedad</h2>
         </div>
 
-    <section class="formPage">
-        <div class="formularioContacto">
-            <form>
-                <ul>
-                    <li>
-                        <label for="nombreContacto">Nombre:</label>
-                        <input type="text" id="nombreContacto" placeholder="Nombre y Apellido">
-                    </li>
-
-                    <li>
-                        <label for="emailContacto">E-mail</label>
-                        <input type="email" id="emailContacto" placeholder="Dejanos tu mail">
-                    </li>
-
-                    <li>
-                        <label for="telefonoContacto">Teléfono</label>
-                        <input type="number" id="telefonoContacto" placeholder="Con código de área">
-                    </li>
-
-                    <div>
-                        <li>
-                            <p class="lineaContacto">¿Acerca de qué es tu consulta?</p>
-                            <label for="profesores"> Profesores</label>
-                            <input type="radio" id="profesores" name="consulta" value="Profesores">
-                            <br>
-                            <label for="actividades"> Actividades</label>
-                            <input type="radio" id="actividades" name="consulta" value="Actividades">
-                            <br>
-                            <label for="horarios"> Horarios</label>
-                            <input type="radio" id="horarios" name="consulta" value="Horarios">
-                        </li>
-                    </div>
-
-                    <div>
-                        <li>
-                            <p>¡Dejanos tu comentario!</p>
-                            <textarea placeholder="Cuentanos que deseas saber" name="" id="" cols="50"
-                                rows="5"></textarea>
-                        </li>
-                    </div>
-
-                    <input type="button" value="Enviar">
-                </ul>
-            </form>
+        <div class="container-fluid mb-5">
+            <div class="row">
+            <div class="col-sm-12 col-lg-7">
+            <section class="d-flex flex-column align-items-center w-100 mt-5 formulario">
+                <div class="mb-3 w-50 form justify-content-center">
+                    <label for="nombre" class="form-label">Tu nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido">
+                </div>
+                <div class="mb-3 w-50 form">
+                    <label for="mail" class="form-label">Dejanos tu mail</label>
+                    <input type="email" class="form-control" id="mail" placeholder="ejemplo@hotmail.com">
+                </div>
+                <div class="mb-3 w-50 form">
+                    <label for="telefono" class="form-label">Dejanos tu número</label>
+                    <input type="number" class="form-control" id="telefono"
+                        placeholder="Con código de área (387-XXXXXXX)">
+                </div>
+                <div class="mb-3 w-50 form">
+                    <label for="consulta" class="form-label">¡Decinos en qué podemos ayudarte!</label>
+                    <textarea class="form-control" id="consulta" rows="5"></textarea>
+                    <div class="mt-3 form">
+                        <button class="btn btn-primary" type="submit">¡Enviar!</button>
+                      </div>
+                </div>
+            </section>
         </div>
 
-        <div class="mapaContacto">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.182783271689!2d-65.42313188530014!3d-24.789193884087542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3b198e6438d%3A0xdbb166646f3f91d3!2sGimnasio%20Vital!5e0!3m2!1ses-419!2sar!4v1640648963952!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <h2 class="cierreContacto">¡Encontranos acá!</h2>
+            <div class="col-sm-12 col-lg-5">
+            <div class="mt-5 mapaContacto">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.182783271689!2d-65.42313188530014!3d-24.789193884087542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3b198e6438d%3A0xdbb166646f3f91d3!2sGimnasio%20Vital!5e0!3m2!1ses-419!2sar!4v1640648963952!5m2!1ses-419!2sar"
+                    width="60%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h2 class="cierreContacto">¡Encontranos acá!</h2>
+            </div>
         </div>
-    </section>
+
+        </div>
+        </div>
+
+
 
 
     </main>
@@ -123,7 +116,7 @@
             <h3>387-4455594</h3>
             <h3>Lunes a viernes 7:00hs a 22:00hs</h3>
             <h3>VitalGymSalta@hotmail.com</h3>
-            <a class="linkInsta" href="https://www.instagram.com" target="_blank">¡Seguinos en Intagram!</a>
+            <a class="linkInsta" href="https://www.instagram.com" target="_blank">¡Seguinos en Instagram!</a>
         </div>
     </footer>
 

@@ -1,11 +1,13 @@
   /* Pagina NOSOTROS */
 
   .cuerpoProfesores{
-    background-color: rgba(0, 0, 0, 0.932);
+    background-image: url(../assets/img/back-horarios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 10%; */
 }  
 
 .introProfesores{
-    margin-top: 20px;
     width: 100%;
     text-align: center;
     font-family: $fontPrincipal;
@@ -23,22 +25,10 @@
 }
 
 .fotoProfe{
-    width: 100%;
+    display: block;
+    margin: auto;
 }
 
-.profesores{
-    @include flexbox(row, nowrap);
-}
-
-.profesorUno{
-    flex: 33.3%;
-}
-.profesorDos{
-    flex: 33.3%;
-}
-.profesorTres{
-    flex: 33.3%;
-}
 
 .profesores div{
     padding: 30px; 
@@ -56,13 +46,4 @@
     font-family: sans-serif;
     font-size: 20px;
     color: map-get($colores , claro );
-    margin-top: 30px;
-}
-
-/* Responsive Nosotros */
-
-@media (max-width: 800px) {
-    .profesores {
-        flex-direction: column;
-  }
 }

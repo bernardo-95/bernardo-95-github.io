@@ -146,10 +146,12 @@ footer {
 
 /* Pagina NOSOTROS */
 .cuerpoProfesores {
-  background-color: rgba(0, 0, 0, 0.932); }
+  background-image: url(../assets/img/back-horarios.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: 10%; */ }
 
 .introProfesores {
-  margin-top: 20px;
   width: 100%;
   text-align: center;
   font-family: Staatliches;
@@ -165,21 +167,8 @@ footer {
   margin-top: 20px; }
 
 .fotoProfe {
-  width: 100%; }
-
-.profesores {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap; }
-
-.profesorUno {
-  flex: 33.3%; }
-
-.profesorDos {
-  flex: 33.3%; }
-
-.profesorTres {
-  flex: 33.3%; }
+  display: block;
+  margin: auto; }
 
 .profesores div {
   padding: 30px; }
@@ -194,17 +183,13 @@ footer {
   text-align: center;
   font-family: sans-serif;
   font-size: 20px;
-  color: white;
-  margin-top: 30px; }
-
-/* Responsive Nosotros */
-@media (max-width: 800px) {
-  .profesores {
-    flex-direction: column; } }
+  color: white; }
 
 /* Pagina ACTIVIDADES */
 .cuerpoActividades {
-  background-color: rgba(0, 0, 0, 0.932); }
+  background-image: url(../assets/img/back-act.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .introActividades {
   width: 100%;
@@ -260,8 +245,7 @@ footer {
   background-image: url(../assets/img/background-horarios.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 100%;
-  height: 800px; }
+  background-position: 100%; }
 
 .introHorarios {
   width: 100%;
@@ -285,23 +269,15 @@ footer {
   color: white;
   -webkit-text-stroke: 1.5px black; }
 
-table {
-  font-family: Staatliches;
-  font-size: 25px;
-  border: orange solid 10px;
-  background-color: black;
-  color: white;
-  text-align: center;
-  width: 80%;
-  margin: auto; }
+.horarios {
+  width: 100%;
+  text-align: center; }
+
+.fotoHorarios {
+  width: 50%; }
 
 /* Responsive Horarios */
 @media (max-width: 800px) {
-  table {
-    font-size: 20px;
-    width: 100%; } }
-
-@media (max-width: 800px) {
   .introHorarios h2 {
     font-size: 40px; } }
 
@@ -314,6 +290,14 @@ table {
     font-size: 40px; } }
 
 @media (max-width: 500px) {
+  .fotoHorarios {
+    width: 95%; } }
+
+@media (max-width: 900px) {
+  .fotoHorarios {
+    width: 80%; } }
+
+@media (max-width: 500px) {
   .introHorarios h2 {
     font-size: 30px; } }
 
@@ -324,11 +308,6 @@ table {
 @media (max-width: 500px) {
   .cierreHorarios {
     font-size: 30px; } }
-
-@media (max-width: 500px) {
-  table {
-    font-size: 15px;
-    width: 100%; } }
 
 /* Pagina CONTACTO */
 .cuerpoContacto {
@@ -340,53 +319,37 @@ table {
   width: 100%;
   text-align: center;
   font-family: Staatliches;
-  font-size: 30px;
-  color: white; }
+  color: white;
+  margin-top: 20px;
+  -webkit-text-stroke: 1.5px black; }
+
+.introContacto h2 {
+  font-size: 45px; }
 
 .cierreContacto {
   width: 100%;
-  /* text-align: center; */
   font-family: Staatliches;
-  font-size: 40px;
-  color: white; }
-
-.formPage {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap; }
-
-.formularioContacto {
-  flex: 50%;
-  width: 100%;
-  text-align: center;
-  font-family: Staatliches;
-  font-size: 20px;
+  font-size: 50px;
   color: white;
-  padding: 30px;
-  border-right: 5px solid white; }
+  margin-top: 20px;
+  -webkit-text-stroke: 1.5px black; }
 
-.formularioContacto li {
-  list-style: none; }
+.form {
+  font-family: Staatliches;
+  font-size: 20px; }
 
 .mapaContacto {
-  flex: 50%;
-  width: 100%;
-  text-align: center;
-  padding: 50px; }
+  width: 100%; }
 
 /* Responsive Contacto */
 @media (max-width: 800px) {
-  .formPage {
-    flex-direction: column; } }
+  .form {
+    width: 50%; } }
+
+@media (max-width: 800px) {
+  .introContacto h2 {
+    font-size: 30px; } }
 
 @media (max-width: 800px) {
   .mapaContacto {
-    padding: 0px;
-    margin-top: 20px; } }
-
-@media (max-width: 800px) {
-  .formularioContacto {
-    padding: 0px;
-    border-right: 0px;
-    border-bottom: 5px solid white;
-    padding-bottom: 10px; } }
+    text-align: center; } }

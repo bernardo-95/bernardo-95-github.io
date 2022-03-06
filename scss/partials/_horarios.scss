@@ -5,7 +5,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100%;
-    height: 800px;
 }
 
 .introHorarios{
@@ -34,28 +33,18 @@
     -webkit-text-stroke: 1.5px black;
 }
 
-table{
-    font-family: $fontPrincipal;
-    font-size: 25px;
-    border: orange solid 10px;
-    background-color: black;
-    color: map-get($colores , claro );
+.horarios{
+    width: 100%;
     text-align: center;
-    width: 80%;
-    margin: auto;
+}
 
+.fotoHorarios{
+    width: 50%;
 }
 
 /* Responsive Horarios */
 
 @media (max-width: 800px) {
-   table{
-       font-size: 20px;
-       width: 100%;   
-  }
-}
-
-@media (max-width: 800px) {
     .introHorarios h2 {
         font-size: 40px;
   }
@@ -73,6 +62,18 @@ table{
 }
 
 @media (max-width: 500px) {
+    .fotoHorarios {
+        width: 95%;
+  }
+}
+
+@media (max-width: 900px) {
+    .fotoHorarios {
+        width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
     .introHorarios h2 {
         font-size: 30px;
   }
@@ -88,10 +89,3 @@ table{
         font-size: 30px;
   }
 }
-
-@media (max-width: 500px) {
-    table{
-        font-size: 15px;
-        width: 100%;   
-   }
- }
